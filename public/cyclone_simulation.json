@@ -1,0 +1,979 @@
+{
+  "event_name": "Simulated Super Cyclone",
+  "metadata": {
+    "generated_at": "2026-03-15T17:08:34.820876Z",
+    "total_steps": 17,
+    "zones_tracked": 5
+  },
+  "timeline": [
+    {
+      "timestamp": "2026-05-20T00:00:00Z",
+      "hour_offset": 0,
+      "phase": "Approaching",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 15,
+          "rain_mm": 4,
+          "flood_risk": 2,
+          "landslide_risk": 1,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 10,
+          "rain_mm": 5,
+          "flood_risk": 2,
+          "landslide_risk": 2,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 10,
+          "rain_mm": 8,
+          "flood_risk": 4,
+          "landslide_risk": 3,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 15,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 14,
+          "rain_mm": 4,
+          "flood_risk": 2,
+          "landslide_risk": 1,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T06:00:00Z",
+      "hour_offset": 6,
+      "phase": "Approaching",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 74,
+          "rain_mm": 29,
+          "flood_risk": 34,
+          "landslide_risk": 34,
+          "stations_total": 15,
+          "stations_offline": 3
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 10,
+          "rain_mm": 2,
+          "flood_risk": 1,
+          "landslide_risk": 0,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 12,
+          "rain_mm": 8,
+          "flood_risk": 4,
+          "landslide_risk": 3,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 13,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 11,
+          "rain_mm": 4,
+          "flood_risk": 2,
+          "landslide_risk": 1,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T12:00:00Z",
+      "hour_offset": 12,
+      "phase": "Imminent",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 129,
+          "rain_mm": 48,
+          "flood_risk": 61,
+          "landslide_risk": 61,
+          "stations_total": 15,
+          "stations_offline": 4
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 47,
+          "rain_mm": 15,
+          "flood_risk": 19,
+          "landslide_risk": 19,
+          "stations_total": 25,
+          "stations_offline": 3
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 10,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 15,
+          "rain_mm": 4,
+          "flood_risk": 2,
+          "landslide_risk": 1,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 15,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T18:00:00Z",
+      "hour_offset": 18,
+      "phase": "Imminent",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 189,
+          "rain_mm": 79,
+          "flood_risk": 96,
+          "landslide_risk": 95,
+          "stations_total": 15,
+          "stations_offline": 7
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 89,
+          "rain_mm": 38,
+          "flood_risk": 46,
+          "landslide_risk": 47,
+          "stations_total": 25,
+          "stations_offline": 10
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 34,
+          "rain_mm": 12,
+          "flood_risk": 12,
+          "landslide_risk": 13,
+          "stations_total": 35,
+          "stations_offline": 5
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 10,
+          "rain_mm": 8,
+          "flood_risk": 4,
+          "landslide_risk": 3,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 13,
+          "rain_mm": 2,
+          "flood_risk": 1,
+          "landslide_risk": 0,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T00:00:00Z",
+      "hour_offset": 24,
+      "phase": "Landfall",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 265,
+          "rain_mm": 103,
+          "flood_risk": 100,
+          "landslide_risk": 100,
+          "stations_total": 15,
+          "stations_offline": 10
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 129,
+          "rain_mm": 52,
+          "flood_risk": 64,
+          "landslide_risk": 65,
+          "stations_total": 25,
+          "stations_offline": 11
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 52,
+          "rain_mm": 22,
+          "flood_risk": 24,
+          "landslide_risk": 25,
+          "stations_total": 35,
+          "stations_offline": 7
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 18,
+          "rain_mm": 7,
+          "flood_risk": 6,
+          "landslide_risk": 6,
+          "stations_total": 45,
+          "stations_offline": 6
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 12,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T06:00:00Z",
+      "hour_offset": 30,
+      "phase": "Inland Transit",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 208,
+          "rain_mm": 82,
+          "flood_risk": 100,
+          "landslide_risk": 100,
+          "stations_total": 15,
+          "stations_offline": 9
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 146,
+          "rain_mm": 56,
+          "flood_risk": 74,
+          "landslide_risk": 76,
+          "stations_total": 25,
+          "stations_offline": 13
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 66,
+          "rain_mm": 28,
+          "flood_risk": 33,
+          "landslide_risk": 35,
+          "stations_total": 35,
+          "stations_offline": 14
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 34,
+          "rain_mm": 16,
+          "flood_risk": 13,
+          "landslide_risk": 14,
+          "stations_total": 45,
+          "stations_offline": 10
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 16,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 3,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T12:00:00Z",
+      "hour_offset": 36,
+      "phase": "Inland Transit",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 120,
+          "rain_mm": 52,
+          "flood_risk": 62,
+          "landslide_risk": 61,
+          "stations_total": 15,
+          "stations_offline": 6
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 131,
+          "rain_mm": 51,
+          "flood_risk": 66,
+          "landslide_risk": 68,
+          "stations_total": 25,
+          "stations_offline": 13
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 90,
+          "rain_mm": 40,
+          "flood_risk": 47,
+          "landslide_risk": 50,
+          "stations_total": 35,
+          "stations_offline": 15
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 41,
+          "rain_mm": 15,
+          "flood_risk": 15,
+          "landslide_risk": 18,
+          "stations_total": 45,
+          "stations_offline": 17
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 21,
+          "rain_mm": 11,
+          "flood_risk": 6,
+          "landslide_risk": 6,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T18:00:00Z",
+      "hour_offset": 42,
+      "phase": "Inland Transit",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 76,
+          "rain_mm": 32,
+          "flood_risk": 37,
+          "landslide_risk": 37,
+          "stations_total": 15,
+          "stations_offline": 2
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 80,
+          "rain_mm": 31,
+          "flood_risk": 38,
+          "landslide_risk": 39,
+          "stations_total": 25,
+          "stations_offline": 7
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 75,
+          "rain_mm": 31,
+          "flood_risk": 36,
+          "landslide_risk": 38,
+          "stations_total": 35,
+          "stations_offline": 12
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 55,
+          "rain_mm": 24,
+          "flood_risk": 23,
+          "landslide_risk": 26,
+          "stations_total": 45,
+          "stations_offline": 16
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 28,
+          "rain_mm": 6,
+          "flood_risk": 4,
+          "landslide_risk": 5,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-22T00:00:00Z",
+      "hour_offset": 48,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 14,
+          "rain_mm": 4,
+          "flood_risk": 2,
+          "landslide_risk": 1,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 50,
+          "rain_mm": 17,
+          "flood_risk": 22,
+          "landslide_risk": 22,
+          "stations_total": 25,
+          "stations_offline": 4
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 51,
+          "rain_mm": 21,
+          "flood_risk": 24,
+          "landslide_risk": 26,
+          "stations_total": 35,
+          "stations_offline": 9
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 42,
+          "rain_mm": 18,
+          "flood_risk": 16,
+          "landslide_risk": 18,
+          "stations_total": 45,
+          "stations_offline": 13
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 27,
+          "rain_mm": 8,
+          "flood_risk": 6,
+          "landslide_risk": 7,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-22T06:00:00Z",
+      "hour_offset": 54,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 10,
+          "rain_mm": 5,
+          "flood_risk": 2,
+          "landslide_risk": 2,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 13,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 30,
+          "rain_mm": 12,
+          "flood_risk": 13,
+          "landslide_risk": 14,
+          "stations_total": 35,
+          "stations_offline": 5
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 39,
+          "rain_mm": 15,
+          "flood_risk": 13,
+          "landslide_risk": 15,
+          "stations_total": 45,
+          "stations_offline": 9
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 25,
+          "rain_mm": 12,
+          "flood_risk": 7,
+          "landslide_risk": 8,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-22T12:00:00Z",
+      "hour_offset": 60,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 10,
+          "rain_mm": 8,
+          "flood_risk": 4,
+          "landslide_risk": 3,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 13,
+          "rain_mm": 8,
+          "flood_risk": 4,
+          "landslide_risk": 3,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 10,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 21,
+          "rain_mm": 12,
+          "flood_risk": 8,
+          "landslide_risk": 9,
+          "stations_total": 45,
+          "stations_offline": 4
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 24,
+          "rain_mm": 5,
+          "flood_risk": 3,
+          "landslide_risk": 3,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-22T18:00:00Z",
+      "hour_offset": 66,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 12,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 13,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 15,
+          "rain_mm": 5,
+          "flood_risk": 2,
+          "landslide_risk": 2,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 10,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 16,
+          "rain_mm": 3,
+          "flood_risk": 2,
+          "landslide_risk": 2,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-23T00:00:00Z",
+      "hour_offset": 72,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 12,
+          "rain_mm": 8,
+          "flood_risk": 4,
+          "landslide_risk": 3,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 11,
+          "rain_mm": 4,
+          "flood_risk": 2,
+          "landslide_risk": 1,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 13,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 10,
+          "rain_mm": 2,
+          "flood_risk": 1,
+          "landslide_risk": 0,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 10,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-23T06:00:00Z",
+      "hour_offset": 78,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 10,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 13,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 12,
+          "rain_mm": 2,
+          "flood_risk": 1,
+          "landslide_risk": 0,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 10,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 12,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-23T12:00:00Z",
+      "hour_offset": 84,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 10,
+          "rain_mm": 4,
+          "flood_risk": 2,
+          "landslide_risk": 1,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 11,
+          "rain_mm": 2,
+          "flood_risk": 1,
+          "landslide_risk": 0,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 11,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 14,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 10,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-23T18:00:00Z",
+      "hour_offset": 90,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 10,
+          "rain_mm": 5,
+          "flood_risk": 2,
+          "landslide_risk": 2,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 15,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 10,
+          "rain_mm": 5,
+          "flood_risk": 2,
+          "landslide_risk": 2,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 12,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 12,
+          "rain_mm": 6,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-05-24T00:00:00Z",
+      "hour_offset": 96,
+      "phase": "Dissipating",
+      "zones": [
+        {
+          "zone": "Level 1 - Critical",
+          "level": 1,
+          "wind_kmh": 10,
+          "rain_mm": 8,
+          "flood_risk": 4,
+          "landslide_risk": 3,
+          "stations_total": 15,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 2 - High",
+          "level": 2,
+          "wind_kmh": 10,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 25,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 3 - Moderate",
+          "level": 3,
+          "wind_kmh": 10,
+          "rain_mm": 7,
+          "flood_risk": 3,
+          "landslide_risk": 2,
+          "stations_total": 35,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 4 - Low",
+          "level": 4,
+          "wind_kmh": 13,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 45,
+          "stations_offline": 0
+        },
+        {
+          "zone": "Level 5 - Safe",
+          "level": 5,
+          "wind_kmh": 10,
+          "rain_mm": 3,
+          "flood_risk": 1,
+          "landslide_risk": 1,
+          "stations_total": 0,
+          "stations_offline": 0
+        }
+      ]
+    }
+  ]
+}

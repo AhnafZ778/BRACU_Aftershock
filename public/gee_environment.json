@@ -1,0 +1,110 @@
+{
+  "source": "Google Earth Engine",
+  "datasets": [
+    "ERA5_LAND",
+    "TRMM",
+    "OISST"
+  ],
+  "generated_at": "2026-03-29T17:12:23.070954",
+  "locality_data": {
+    "BD1004": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:09:02.721861",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 26.838
+    },
+    "BD1006": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:09:36.315190",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD1009": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:09:54.299160",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD1042": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:10:02.599493",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD1078": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:10:23.593156",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 26.88
+    },
+    "BD1079": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:10:38.774243",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD2003": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:10:47.368680",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD2012": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:11:07.786883",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD2013": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:11:26.339428",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD2015": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:11:55.212864",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    },
+    "BD2019": {
+      "wind_u": 0.0,
+      "wind_v": 0.0,
+      "air_temp_k": 0.0,
+      "surface_pressure_pa": 0.0,
+      "timestamp": "2026-03-29T17:12:21.137108",
+      "precipitation_mm_72h": 0.0,
+      "sst_celsius": 0.0
+    }
+  }
+}
