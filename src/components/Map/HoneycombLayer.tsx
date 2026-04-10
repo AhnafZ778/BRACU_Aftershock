@@ -1131,14 +1131,17 @@ function computeSubscores(loc: LocalityData): SubscoreResult {
 /* ------------------------------------------------------------------ */
 /*  Fixed Cell Size                                                    */
 /* ------------------------------------------------------------------ */
-// Dhaka control-room view needs very dense, compact honeycomb cells.
-// turf.hexGrid uses this as cell side length, so 0.45km yields tight sub-km hexes.
-const CELL_SIZE_KM = 0.45;
+// Dhaka control-room view needs ultra-compact honeycomb cells.
+// turf.hexGrid uses side length in kilometers.
+const CELL_SIZE_KM = 0.25;
 const BORDER_SIMPLIFY_TOLERANCE = 0.003;
 const GRID_BOUNDARY_URL = '/dhaka_border.json';
 const COASTLINE_SOURCE_URL = '/bangladesh_simplified.json';
 const HONEYCOMB_PANE = 'honeycomb-overlay-pane';
 const HONEYCOMB_MODEL_VERSION = 'v4-hybrid-2026-03';
+const HEX_EDGE_COLOR = '#0b1324';
+const HEX_EDGE_WEIGHT = 0.72;
+const HEX_EDGE_OPACITY = 0.9;
 
 /* ------------------------------------------------------------------ */
 /*  Coastline Extraction                                               */
@@ -1642,7 +1645,16 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
               const p = l?.feature?.properties;
               if (!p) return;
               if (l.setStyle) {
-                l.setStyle({ fillColor: p.dangerColor, color: p.dangerColor });
+                l.setStyle({
+                  fillColor: p.dangerColor,
+                  fillOpacity: 0.12,
+                  color: HEX_EDGE_COLOR,
+                  weight: HEX_EDGE_WEIGHT,
+                  opacity: HEX_EDGE_OPACITY,
+                  dashArray: '',
+                  lineCap: 'round',
+                  lineJoin: 'round',
+                });
               }
             });
           })
@@ -1681,18 +1693,24 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
           return {
             fillColor: '#22c55e',
             fillOpacity: 0.1,
-            color: 'rgba(255,255,255,0.1)',
-            weight: 0.22,
-            opacity: 0.22,
+            color: HEX_EDGE_COLOR,
+            weight: HEX_EDGE_WEIGHT,
+            opacity: HEX_EDGE_OPACITY,
+            dashArray: '',
+            lineCap: 'round' as const,
+            lineJoin: 'round' as const,
           };
         }
         const color = feature.properties.dangerColor || '#22c55e';
         return {
           fillColor: color,
-          fillOpacity: 0.14,
-          color: color,
-          weight: 0.28,
-          opacity: 0.24,
+          fillOpacity: 0.12,
+          color: HEX_EDGE_COLOR,
+          weight: HEX_EDGE_WEIGHT,
+          opacity: HEX_EDGE_OPACITY,
+          dashArray: '',
+          lineCap: 'round' as const,
+          lineJoin: 'round' as const,
         };
       },
       onEachFeature: (feature: Feature, layer: L.Layer) => {
@@ -1741,9 +1759,11 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             target.setTooltipContent(generateHoverFormulaContent(feature.properties));
             target.openTooltip(e.latlng);
             target.setStyle({
-              fillOpacity: 0.24,
-              weight: 0.65,
-              opacity: 0.42,
+              fillOpacity: 0.22,
+              weight: 1.05,
+              opacity: 1,
+              color: '#e2e8f0',
+              dashArray: '',
             });
             target.bringToFront();
           },
@@ -1754,10 +1774,11 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             const color = feature.properties?.dangerColor || '#22c55e';
             target.setStyle({
               fillColor: color,
-              fillOpacity: 0.14,
-              color: color,
-              weight: 0.28,
-              opacity: 0.24,
+              fillOpacity: 0.12,
+              color: HEX_EDGE_COLOR,
+              weight: HEX_EDGE_WEIGHT,
+              opacity: HEX_EDGE_OPACITY,
+              dashArray: '',
             });
           },
           click: () => {
@@ -1766,10 +1787,11 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             target.closeTooltip();
             target.setPopupContent(generatePopupContent(feature.properties));
             target.setStyle({
-              fillOpacity: 0.28,
-              weight: 0.9,
-              opacity: 0.5,
-              color: '#f8fafc',
+              fillOpacity: 0.26,
+              weight: 1.35,
+              opacity: 1,
+              color: '#ffffff',
+              dashArray: '',
             });
             target.bringToFront();
             target.openPopup();
@@ -1780,10 +1802,11 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             const color = feature.properties?.dangerColor || '#22c55e';
             target.setStyle({
               fillColor: color,
-              fillOpacity: 0.14,
-              color: color,
-              weight: 0.28,
-              opacity: 0.24,
+              fillOpacity: 0.12,
+              color: HEX_EDGE_COLOR,
+              weight: HEX_EDGE_WEIGHT,
+              opacity: HEX_EDGE_OPACITY,
+              dashArray: '',
             });
           },
         });
@@ -2077,7 +2100,14 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             
             // Apply updated style
             if (visibleRef.current && l.setStyle) {
-                l.setStyle({ fillColor: p.dangerColor, color: p.dangerColor });
+                l.setStyle({
+                  fillColor: p.dangerColor,
+                  fillOpacity: 0.12,
+                  color: HEX_EDGE_COLOR,
+                  weight: HEX_EDGE_WEIGHT,
+                  opacity: HEX_EDGE_OPACITY,
+                  dashArray: '',
+                });
             }
             
             // Tally features for Control Panel Arrays
@@ -2147,7 +2177,14 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
       layerRef.current.eachLayer((l: any) => {
         const p = l?.feature?.properties;
         if (!p || !l.setStyle) return;
-        l.setStyle({ fillColor: p.dangerColor, color: p.dangerColor });
+        l.setStyle({
+          fillColor: p.dangerColor,
+          fillOpacity: 0.12,
+          color: HEX_EDGE_COLOR,
+          weight: HEX_EDGE_WEIGHT,
+          opacity: HEX_EDGE_OPACITY,
+          dashArray: '',
+        });
       });
     }
   }, [map, ready, visible]);
