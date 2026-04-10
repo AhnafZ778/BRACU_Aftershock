@@ -1,0 +1,6 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local heavy extract excluded to keep git blobs under host limits
+Take/dhaka_extract/dhaka_city_buildings.gpkg
