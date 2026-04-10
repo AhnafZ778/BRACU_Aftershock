@@ -26,6 +26,54 @@ export const DANGER_LEVELS: DangerLevel[] = [
   { level: 5, label: 'Low',       color: '#22c55e', minScore: 0 },
 ];
 
+const RISK_COLOR_STOPS: Array<{ score: number; color: string }> = [
+  { score: 0, color: '#16a34a' },
+  { score: 35, color: '#65a30d' },
+  { score: 50, color: '#d97706' },
+  { score: 65, color: '#ea580c' },
+  { score: 80, color: '#dc2626' },
+  { score: 100, color: '#7f1d1d' },
+];
+
+function hexToRgb(hex: string): [number, number, number] {
+  const cleaned = hex.replace('#', '');
+  const value = cleaned.length === 3
+    ? cleaned.split('').map((c) => `${c}${c}`).join('')
+    : cleaned;
+  const n = parseInt(value, 16);
+  return [
+    (n >> 16) & 255,
+    (n >> 8) & 255,
+    n & 255,
+  ];
+}
+
+function rgbToHex(r: number, g: number, b: number): string {
+  const to = (v: number) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0');
+  return `#${to(r)}${to(g)}${to(b)}`;
+}
+
+function getContinuousRiskColor(index: number): string {
+  const score = Math.max(0, Math.min(100, index));
+
+  for (let i = 0; i < RISK_COLOR_STOPS.length - 1; i += 1) {
+    const a = RISK_COLOR_STOPS[i];
+    const b = RISK_COLOR_STOPS[i + 1];
+    if (score >= a.score && score <= b.score) {
+      const t = (score - a.score) / Math.max(1, b.score - a.score);
+      const [ar, ag, ab] = hexToRgb(a.color);
+      const [br, bg, bb] = hexToRgb(b.color);
+      return rgbToHex(
+        ar + (br - ar) * t,
+        ag + (bg - ag) * t,
+        ab + (bb - ab) * t,
+      );
+    }
+  }
+
+  return RISK_COLOR_STOPS[RISK_COLOR_STOPS.length - 1].color;
+}
+
 function getDangerLevelFromIndex(index: number): DangerLevel {
   for (const dl of DANGER_LEVELS) {
     if (index >= dl.minScore) return dl;
@@ -1139,9 +1187,31 @@ const GRID_BOUNDARY_URL = '/dhaka_border.json';
 const COASTLINE_SOURCE_URL = '/bangladesh_simplified.json';
 const HONEYCOMB_PANE = 'honeycomb-overlay-pane';
 const HONEYCOMB_MODEL_VERSION = 'v4-hybrid-2026-03';
-const HEX_EDGE_COLOR = '#0b1324';
-const HEX_EDGE_WEIGHT = 0.72;
-const HEX_EDGE_OPACITY = 0.9;
+const HEX_EDGE_COLOR = '#334155';
+const HEX_EDGE_WEIGHT = 0.44;
+const HEX_EDGE_OPACITY = 0.68;
+const HEX_HOVER_FILL_OPACITY = 0.32;
+const HEX_CLICK_FILL_OPACITY = 0.36;
+
+function getBaseFillOpacity(index: number): number {
+  const clamped = Math.max(0, Math.min(100, index));
+  return 0.2 + (clamped / 100) * 0.14;
+}
+
+function getHexBaseStyle(p: any) {
+  const idx = Number(p?.dangerIndex ?? 0);
+  const fillColor = p?.dangerColor || getContinuousRiskColor(idx);
+  return {
+    fillColor,
+    fillOpacity: getBaseFillOpacity(idx),
+    color: HEX_EDGE_COLOR,
+    weight: HEX_EDGE_WEIGHT,
+    opacity: HEX_EDGE_OPACITY,
+    dashArray: '',
+    lineCap: 'round' as const,
+    lineJoin: 'round' as const,
+  };
+}
 
 /* ------------------------------------------------------------------ */
 /*  Coastline Extraction                                               */
@@ -1303,7 +1373,7 @@ function applyDynamicHazardToGrid(grid: FeatureCollection, dynamicMap: DynamicMa
     p.dangerIndex = blendedIndex;
     p.dangerLevel = danger.level;
     p.dangerLabel = danger.label;
-    p.dangerColor = danger.color;
+    p.dangerColor = getContinuousRiskColor(blendedIndex);
 
     p.baselineDZI = Math.round(base * 100);
     p.eventHazard = Math.round(dynamicBoost * 100);
@@ -1457,7 +1527,7 @@ function generateHoneycombGridOnce(
         dangerIndex: staticIndex,
         dangerLevel: danger.level,
         dangerLabel: danger.label,
-        dangerColor: danger.color,
+        dangerColor: getContinuousRiskColor(staticIndex),
         cellSizeKm: CELL_SIZE_KM,
         v4Interpolated: true,  // debug marker
         modelVersion: HONEYCOMB_MODEL_VERSION,
@@ -1645,16 +1715,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
               const p = l?.feature?.properties;
               if (!p) return;
               if (l.setStyle) {
-                l.setStyle({
-                  fillColor: p.dangerColor,
-                  fillOpacity: 0.12,
-                  color: HEX_EDGE_COLOR,
-                  weight: HEX_EDGE_WEIGHT,
-                  opacity: HEX_EDGE_OPACITY,
-                  dashArray: '',
-                  lineCap: 'round',
-                  lineJoin: 'round',
-                });
+                l.setStyle(getHexBaseStyle(p));
               }
             });
           })
@@ -1692,7 +1753,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
         if (!feature?.properties) {
           return {
             fillColor: '#22c55e',
-            fillOpacity: 0.1,
+            fillOpacity: 0.2,
             color: HEX_EDGE_COLOR,
             weight: HEX_EDGE_WEIGHT,
             opacity: HEX_EDGE_OPACITY,
@@ -1701,17 +1762,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             lineJoin: 'round' as const,
           };
         }
-        const color = feature.properties.dangerColor || '#22c55e';
-        return {
-          fillColor: color,
-          fillOpacity: 0.12,
-          color: HEX_EDGE_COLOR,
-          weight: HEX_EDGE_WEIGHT,
-          opacity: HEX_EDGE_OPACITY,
-          dashArray: '',
-          lineCap: 'round' as const,
-          lineJoin: 'round' as const,
-        };
+        return getHexBaseStyle(feature.properties);
       },
       onEachFeature: (feature: Feature, layer: L.Layer) => {
         if (!feature.properties) return;
@@ -1758,10 +1809,12 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             const target = e.target as L.Path;
             target.setTooltipContent(generateHoverFormulaContent(feature.properties));
             target.openTooltip(e.latlng);
+            const idx = Number(feature.properties?.dangerIndex ?? 0);
             target.setStyle({
-              fillOpacity: 0.22,
-              weight: 1.05,
-              opacity: 1,
+              ...getHexBaseStyle(feature.properties),
+              fillOpacity: Math.max(HEX_HOVER_FILL_OPACITY, getBaseFillOpacity(idx) + 0.08),
+              weight: 0.72,
+              opacity: 0.92,
               color: '#e2e8f0',
               dashArray: '',
             });
@@ -1771,26 +1824,20 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             if (isClicked) return;
             const target = e.target as L.Path;
             target.closeTooltip();
-            const color = feature.properties?.dangerColor || '#22c55e';
-            target.setStyle({
-              fillColor: color,
-              fillOpacity: 0.12,
-              color: HEX_EDGE_COLOR,
-              weight: HEX_EDGE_WEIGHT,
-              opacity: HEX_EDGE_OPACITY,
-              dashArray: '',
-            });
+            target.setStyle(getHexBaseStyle(feature.properties));
           },
           click: () => {
             isClicked = true;
             const target = layer as L.Path;
             target.closeTooltip();
             target.setPopupContent(generatePopupContent(feature.properties));
+            const idx = Number(feature.properties?.dangerIndex ?? 0);
             target.setStyle({
-              fillOpacity: 0.26,
-              weight: 1.35,
-              opacity: 1,
-              color: '#ffffff',
+              ...getHexBaseStyle(feature.properties),
+              fillOpacity: Math.max(HEX_CLICK_FILL_OPACITY, getBaseFillOpacity(idx) + 0.12),
+              weight: 0.95,
+              opacity: 0.95,
+              color: '#f1f5f9',
               dashArray: '',
             });
             target.bringToFront();
@@ -1799,15 +1846,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
           popupclose: () => {
             isClicked = false;
             const target = layer as L.Path;
-            const color = feature.properties?.dangerColor || '#22c55e';
-            target.setStyle({
-              fillColor: color,
-              fillOpacity: 0.12,
-              color: HEX_EDGE_COLOR,
-              weight: HEX_EDGE_WEIGHT,
-              opacity: HEX_EDGE_OPACITY,
-              dashArray: '',
-            });
+            target.setStyle(getHexBaseStyle(feature.properties));
           },
         });
       },
@@ -2057,7 +2096,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
               p.dangerIndex = displayedDZI;
               p.dangerLevel = danger.level;
               p.dangerLabel = danger.label;
-              p.dangerColor = danger.color;
+              p.dangerColor = getContinuousRiskColor(displayedDZI);
 
               p.dynamicBoost = E;
               p.dynamicWindMs = dynWindMs;
@@ -2089,7 +2128,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
               p.dangerIndex = baseIndex;
               p.dangerLevel = danger.level;
               p.dangerLabel = danger.label;
-              p.dangerColor = danger.color;
+              p.dangerColor = getContinuousRiskColor(baseIndex);
               
               p.dynamicBoost = 0;
               p.dynamicWindMs = 0;
@@ -2100,14 +2139,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             
             // Apply updated style
             if (visibleRef.current && l.setStyle) {
-                l.setStyle({
-                  fillColor: p.dangerColor,
-                  fillOpacity: 0.12,
-                  color: HEX_EDGE_COLOR,
-                  weight: HEX_EDGE_WEIGHT,
-                  opacity: HEX_EDGE_OPACITY,
-                  dashArray: '',
-                });
+                l.setStyle(getHexBaseStyle(p));
             }
             
             // Tally features for Control Panel Arrays
@@ -2177,14 +2209,7 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
       layerRef.current.eachLayer((l: any) => {
         const p = l?.feature?.properties;
         if (!p || !l.setStyle) return;
-        l.setStyle({
-          fillColor: p.dangerColor,
-          fillOpacity: 0.12,
-          color: HEX_EDGE_COLOR,
-          weight: HEX_EDGE_WEIGHT,
-          opacity: HEX_EDGE_OPACITY,
-          dashArray: '',
-        });
+        l.setStyle(getHexBaseStyle(p));
       });
     }
   }, [map, ready, visible]);

@@ -8,6 +8,7 @@ import { RoadOverlayLayer } from './roads/RoadOverlayLayer';
 import { TakeGeoJsonLayers } from './TakeGeoJsonLayers';
 import { EmployeeHeatmapLayer } from './EmployeeHeatmapLayer';
 import { EmployeeMarkersLayer } from './EmployeeMarkersLayer';
+import { SosAlertLayer } from './SosAlertLayer';
 import { MultiScaleHazardLayer } from './MultiScaleHazardLayer';
 import type { TakeLayerDef } from '../../hooks/useTakeLayers';
 
@@ -384,6 +385,9 @@ export function MapView({
 
         {/* Employee Markers + Trails */}
         <EmployeeMarkersLayer />
+
+        {/* SOS Alert Markers (cross-tab synced) */}
+        <SosAlertLayer />
       </MapContainer>
     </div>
   );

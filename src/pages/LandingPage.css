@@ -20,6 +20,33 @@
   overflow-x: clip;
 }
 
+.landing-page-centered {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-main-centered {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-section {
+  width: min(780px, calc(100% - 2.8rem));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portal-head h2 {
+  margin: 0 0 2rem;
+  font-family: "Noto Serif", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--lp-on-surface);
+}
+
 .landing-grain {
   position: fixed;
   inset: 0;
@@ -320,6 +347,11 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.login-segments-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 780px;
 }
 
 .segment-card {
