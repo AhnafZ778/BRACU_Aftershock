@@ -1,0 +1,34 @@
+{
+  "scenarios": [
+    {
+      "id": "default",
+      "name": "Category 3 — Teknaf Landfall",
+      "landfall_region": "teknaf",
+      "intensity_level": 3,
+      "storm_size": "medium",
+      "forward_speed": "moderate",
+      "time_stage": "12h_before",
+      "active_hazard_layers": []
+    },
+    {
+      "id": "cat5-teknaf",
+      "name": "Category 5 — Teknaf Landfall",
+      "landfall_region": "teknaf",
+      "intensity_level": 5,
+      "storm_size": "large",
+      "forward_speed": "slow",
+      "time_stage": "6h_before",
+      "active_hazard_layers": []
+    },
+    {
+      "id": "cat2-ukhia",
+      "name": "Category 2 — Ukhia Landfall",
+      "landfall_region": "ukhia",
+      "intensity_level": 2,
+      "storm_size": "small",
+      "forward_speed": "fast",
+      "time_stage": "24h_before",
+      "active_hazard_layers": []
+    }
+  ]
+}

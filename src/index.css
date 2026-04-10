@@ -1,0 +1,339 @@
+@import "tailwindcss";
+
+/* ========================================
+   Nirapotta — Design Tokens
+   ======================================== */
+
+@theme {
+  /* Operations Mode — dark command center */
+  --color-ops-bg: #0f172a;
+  --color-ops-surface: #1e293b;
+  --color-ops-surface-hover: #334155;
+  --color-ops-border: #334155;
+  --color-ops-text: #f1f5f9;
+  --color-ops-text-muted: #94a3b8;
+
+  /* Severity scale */
+  --color-severity-critical: #dc2626;
+  --color-severity-high: #ea580c;
+  --color-severity-moderate: #d97706;
+  --color-severity-low: #16a34a;
+  --color-severity-safe: #22c55e;
+
+  /* Community Mode — full-bleed urgency */
+  --color-community-danger-start: #991b1b;
+  --color-community-danger-end: #b45309;
+  --color-community-safe-start: #064e3b;
+  --color-community-safe-end: #065f46;
+  --color-community-text: #ffffff;
+
+  /* Accent */
+  --color-accent-primary: #3b82f6;
+  --color-accent-teal: #14b8a6;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-bangla: 'Noto Sans Bengali', 'Hind Siliguri', sans-serif;
+}
+
+/* Google Fonts — loaded in index.html */
+/* Inter for operations, Noto Sans Bengali for Bangla */
+
+/* Global resets for map */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+/* ========================================
+   Schools Layer — Marker Clusters
+   ======================================== */
+
+.school-cluster-wrapper {
+  background: transparent !important;
+  border: none !important;
+}
+
+.school-cluster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.85);
+  border: 2px solid rgba(59, 130, 246, 0.6);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.35), 0 0 24px rgba(59, 130, 246, 0.15);
+  animation: cluster-appear 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.school-cluster:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.55), 0 0 32px rgba(59, 130, 246, 0.25);
+}
+
+.school-cluster span {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #f1f5f9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.school-cluster--small {
+  width: 36px;
+  height: 36px;
+}
+
+.school-cluster--medium {
+  width: 42px;
+  height: 42px;
+  border-color: rgba(139, 92, 246, 0.6);
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.35), 0 0 24px rgba(139, 92, 246, 0.15);
+}
+
+.school-cluster--medium:hover {
+  box-shadow: 0 0 16px rgba(139, 92, 246, 0.55), 0 0 32px rgba(139, 92, 246, 0.25);
+}
+
+.school-cluster--large {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.35), 0 0 24px rgba(245, 158, 11, 0.15);
+}
+
+.school-cluster--large:hover {
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.55), 0 0 32px rgba(245, 158, 11, 0.25);
+}
+
+.school-cluster--medium span {
+  font-size: 12px;
+}
+
+.school-cluster--large span {
+  font-size: 13px;
+}
+
+@keyframes cluster-appear {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* School Popup Dark Theme */
+.school-popup .leaflet-popup-content-wrapper {
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.school-popup .leaflet-popup-tip {
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+.school-popup .leaflet-popup-content {
+  margin: 10px 14px;
+}
+
+/* School Marker Icon reset */
+.school-marker-icon,
+.health-marker-icon,
+.shelter-marker-icon,
+.religion-marker-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ========================================
+   Health Layer — Red Clusters
+   ======================================== */
+
+.health-cluster-wrapper { background: transparent !important; border: none !important; }
+
+.health-cluster {
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.85);
+  border: 2px solid rgba(239, 68, 68, 0.6);
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.35), 0 0 24px rgba(239, 68, 68, 0.15);
+  animation: cluster-appear 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.health-cluster:hover { transform: scale(1.15); box-shadow: 0 0 16px rgba(239, 68, 68, 0.55), 0 0 32px rgba(239, 68, 68, 0.25); }
+.health-cluster span { font-family: 'Inter', system-ui, sans-serif; font-size: 11px; font-weight: 700; color: #f1f5f9; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+.health-cluster--small { width: 36px; height: 36px; }
+.health-cluster--medium { width: 42px; height: 42px; border-color: rgba(249, 115, 22, 0.6); box-shadow: 0 0 12px rgba(249, 115, 22, 0.35); }
+.health-cluster--medium:hover { box-shadow: 0 0 16px rgba(249, 115, 22, 0.55); }
+.health-cluster--large { width: 48px; height: 48px; border-color: rgba(239, 68, 68, 0.8); box-shadow: 0 0 14px rgba(239, 68, 68, 0.45); }
+.health-cluster--large:hover { box-shadow: 0 0 20px rgba(239, 68, 68, 0.65); }
+.health-cluster--medium span { font-size: 12px; }
+.health-cluster--large span { font-size: 13px; }
+
+.health-popup .leaflet-popup-content-wrapper,
+.health-popup .leaflet-popup-tip {
+  background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(8px);
+  border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.health-popup .leaflet-popup-content { margin: 10px 14px; }
+
+/* ========================================
+   Shelter Layer — Emerald Clusters
+   ======================================== */
+
+.shelter-cluster-wrapper { background: transparent !important; border: none !important; }
+
+.shelter-cluster {
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.85);
+  border: 2px solid rgba(16, 185, 129, 0.6);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.35), 0 0 24px rgba(16, 185, 129, 0.15);
+  animation: cluster-appear 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.shelter-cluster:hover { transform: scale(1.15); box-shadow: 0 0 16px rgba(16, 185, 129, 0.55), 0 0 32px rgba(16, 185, 129, 0.25); }
+.shelter-cluster span { font-family: 'Inter', system-ui, sans-serif; font-size: 11px; font-weight: 700; color: #f1f5f9; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+.shelter-cluster--small { width: 36px; height: 36px; }
+.shelter-cluster--medium { width: 42px; height: 42px; border-color: rgba(16, 185, 129, 0.7); box-shadow: 0 0 14px rgba(16, 185, 129, 0.4); }
+.shelter-cluster--medium:hover { box-shadow: 0 0 18px rgba(16, 185, 129, 0.55); }
+.shelter-cluster--large { width: 48px; height: 48px; border-color: rgba(16, 185, 129, 0.85); box-shadow: 0 0 16px rgba(16, 185, 129, 0.5); }
+.shelter-cluster--large:hover { box-shadow: 0 0 22px rgba(16, 185, 129, 0.65); }
+.shelter-cluster--medium span { font-size: 12px; }
+.shelter-cluster--large span { font-size: 13px; }
+
+.shelter-popup .leaflet-popup-content-wrapper,
+.shelter-popup .leaflet-popup-tip {
+  background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(8px);
+  border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.shelter-popup .leaflet-popup-content { margin: 10px 14px; }
+
+/* ========================================
+   Religious Places — Cyan Clusters
+   ======================================== */
+
+.religion-cluster-wrapper { background: transparent !important; border: none !important; }
+
+.religion-cluster {
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.85);
+  border: 2px solid rgba(34, 211, 238, 0.6);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.35), 0 0 24px rgba(34, 211, 238, 0.15);
+  animation: cluster-appear 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.religion-cluster:hover { transform: scale(1.15); box-shadow: 0 0 16px rgba(34, 211, 238, 0.55), 0 0 32px rgba(34, 211, 238, 0.25); }
+.religion-cluster span { font-family: 'Inter', system-ui, sans-serif; font-size: 11px; font-weight: 700; color: #f1f5f9; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+.religion-cluster--small { width: 36px; height: 36px; }
+.religion-cluster--medium { width: 42px; height: 42px; border-color: rgba(251, 146, 60, 0.6); box-shadow: 0 0 12px rgba(251, 146, 60, 0.35); }
+.religion-cluster--medium:hover { box-shadow: 0 0 16px rgba(251, 146, 60, 0.55); }
+.religion-cluster--large { width: 48px; height: 48px; border-color: rgba(251, 191, 36, 0.6); box-shadow: 0 0 14px rgba(251, 191, 36, 0.4); }
+.religion-cluster--large:hover { box-shadow: 0 0 20px rgba(251, 191, 36, 0.6); }
+.religion-cluster--medium span { font-size: 12px; }
+.religion-cluster--large span { font-size: 13px; }
+
+.religion-popup .leaflet-popup-content-wrapper,
+.religion-popup .leaflet-popup-tip {
+  background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(8px);
+  border: 1px solid rgba(34, 211, 238, 0.3); border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.religion-popup .leaflet-popup-content { margin: 10px 14px; }
+
+/* ========================================
+   Roads Layer — Popup Only (no clusters)
+   ======================================== */
+
+.road-popup .leaflet-popup-content-wrapper,
+.road-popup .leaflet-popup-tip {
+  background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(8px);
+  border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.road-popup .leaflet-popup-content { margin: 10px 14px; }
+
+/* ========================================
+   Cyclone Eye Marker Animations
+   ======================================== */
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 15px currentColor; }
+  50% { opacity: 0.6; box-shadow: 0 0 30px currentColor, 0 0 60px currentColor; }
+}
+
+/* Cyclone eye marker — strip Leaflet defaults */
+.cyclone-eye-wrapper {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ========================================
+   Escalation Protocol Animations
+   ======================================== */
+
+@keyframes pulse-critical {
+  0%, 100% { opacity: 1; fill-opacity: 0.7; }
+  50% { opacity: 0.8; fill-opacity: 0.9; }
+}
+
+@keyframes pulse-standby {
+  0%, 100% { opacity: 0.6; fill-opacity: 0.5; }
+  50% { opacity: 0.9; fill-opacity: 0.8; }
+}
+
+@keyframes buzzer-ring {
+  0%, 100% { transform: rotate(0deg) scale(1.1); }
+  25% { transform: rotate(-15deg) scale(1.2); }
+  75% { transform: rotate(15deg) scale(1.2); }
+}
+
+.zone-critical {
+  animation: pulse-critical 1.5s ease-in-out infinite;
+  stroke: #ef4444; /* Tailwind red-500 */
+  stroke-width: 2px;
+}
+
+.zone-standby {
+  animation: pulse-standby 2s ease-in-out infinite;
+  stroke: #f59e0b; /* Tailwind amber-500 */
+  stroke-width: 2px;
+}
+
+.buzzer-active {
+  animation: buzzer-ring 0.3s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* ========================================
+   Control Panel Route Highlight
+   ======================================== */
+
+@keyframes route-core-pulse {
+  0%, 100% {
+    stroke-opacity: 1;
+    filter: drop-shadow(0 0 4px rgba(34, 211, 238, 0.65));
+  }
+  50% {
+    stroke-opacity: 0.78;
+    filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.95));
+  }
+}
+
+.best-route-glow {
+  filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.6));
+}
+
+.best-route-core {
+  animation: route-core-pulse 1.4s ease-in-out infinite;
+}
