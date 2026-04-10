@@ -1131,8 +1131,12 @@ function computeSubscores(loc: LocalityData): SubscoreResult {
 /* ------------------------------------------------------------------ */
 /*  Fixed Cell Size                                                    */
 /* ------------------------------------------------------------------ */
-const CELL_SIZE_KM = 6;
-const BORDER_SIMPLIFY_TOLERANCE = 0.02;
+// Dhaka control-room view needs very dense, compact honeycomb cells.
+// turf.hexGrid uses this as cell side length, so 0.45km yields tight sub-km hexes.
+const CELL_SIZE_KM = 0.45;
+const BORDER_SIMPLIFY_TOLERANCE = 0.003;
+const GRID_BOUNDARY_URL = '/dhaka_border.json';
+const COASTLINE_SOURCE_URL = '/bangladesh_simplified.json';
 const HONEYCOMB_PANE = 'honeycomb-overlay-pane';
 const HONEYCOMB_MODEL_VERSION = 'v4-hybrid-2026-03';
 
@@ -1558,9 +1562,10 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
         const dynamicPromise = fetchDynamicHazardMapFast();
 
         // Fetch static datasets in parallel
-        const [borderRes, baselineRes, hydrometRes, floodRes, cycloneEnvRes, surgeRes, cycloneHistRes, ecologyRes, shelterRes] =
+        const [gridBoundaryRes, coastlineRes, baselineRes, hydrometRes, floodRes, cycloneEnvRes, surgeRes, cycloneHistRes, ecologyRes, shelterRes] =
           await Promise.all([
-            fetch('/bangladesh_simplified.json'),
+            fetch(GRID_BOUNDARY_URL),
+            fetch(COASTLINE_SOURCE_URL),
             fetch('/bangladesh_baseline_clean.csv'),
             fetch('/ee_remaining_hydromet_recent.csv'),
             fetch('/ee_remaining_historical_flood.csv'),
@@ -1571,10 +1576,12 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             fetch('/shelter_density_metrics.csv'),
           ]);
 
-        if (!borderRes.ok) throw new Error('Failed to fetch border data');
+        if (!gridBoundaryRes.ok) throw new Error('Failed to fetch Dhaka boundary data');
+        if (!coastlineRes.ok) throw new Error('Failed to fetch coastline source data');
         if (!baselineRes.ok) throw new Error('Failed to fetch baseline data');
 
-        const borderData: FeatureCollection = await borderRes.json();
+        const gridBoundaryData: FeatureCollection = await gridBoundaryRes.json();
+        const coastlineSourceData: FeatureCollection = await coastlineRes.json();
         const baselineText = await baselineRes.text();
         const hydrometText = await hydrometRes.text();
         const floodText = await floodRes.text();
@@ -1602,11 +1609,11 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
           cycloneEnvRows, surgeRows, cycloneHistRows, ecologyRows, shelterRows,
         );
 
-        const coastline = extractCoastline(borderData);
+        const coastline = extractCoastline(coastlineSourceData);
         if (!coastline || cancelled) return;
 
         // Generate static grid first so honeycomb becomes toggle-ready ASAP.
-        const staticGrid = generateHoneycombGridOnce(borderData, coastline, localities);
+        const staticGrid = generateHoneycombGridOnce(gridBoundaryData, coastline, localities);
         const grid = cloneFeatureCollection(staticGrid);
         if (cancelled) return;
 
@@ -1673,18 +1680,19 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
         if (!feature?.properties) {
           return {
             fillColor: '#22c55e',
-            fillOpacity: 0.15,
+            fillOpacity: 0.1,
             color: 'rgba(255,255,255,0.1)',
-            weight: 0.5,
+            weight: 0.22,
+            opacity: 0.22,
           };
         }
         const color = feature.properties.dangerColor || '#22c55e';
         return {
           fillColor: color,
-          fillOpacity: 0.25,
+          fillOpacity: 0.14,
           color: color,
-          weight: 1,
-          opacity: 0.4,
+          weight: 0.28,
+          opacity: 0.24,
         };
       },
       onEachFeature: (feature: Feature, layer: L.Layer) => {
@@ -1733,9 +1741,9 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             target.setTooltipContent(generateHoverFormulaContent(feature.properties));
             target.openTooltip(e.latlng);
             target.setStyle({
-              fillOpacity: 0.62,
-              weight: 2.6,
-              opacity: 0.95,
+              fillOpacity: 0.24,
+              weight: 0.65,
+              opacity: 0.42,
             });
             target.bringToFront();
           },
@@ -1746,10 +1754,10 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             const color = feature.properties?.dangerColor || '#22c55e';
             target.setStyle({
               fillColor: color,
-              fillOpacity: 0.25,
+              fillOpacity: 0.14,
               color: color,
-              weight: 1,
-              opacity: 0.4,
+              weight: 0.28,
+              opacity: 0.24,
             });
           },
           click: () => {
@@ -1758,10 +1766,10 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             target.closeTooltip();
             target.setPopupContent(generatePopupContent(feature.properties));
             target.setStyle({
-              fillOpacity: 0.6,
-              weight: 3,
-              opacity: 1.0,
-              color: '#fff',
+              fillOpacity: 0.28,
+              weight: 0.9,
+              opacity: 0.5,
+              color: '#f8fafc',
             });
             target.bringToFront();
             target.openPopup();
@@ -1772,10 +1780,10 @@ export function HoneycombLayer({ visible = true }: HoneycombLayerProps) {
             const color = feature.properties?.dangerColor || '#22c55e';
             target.setStyle({
               fillColor: color,
-              fillOpacity: 0.25,
+              fillOpacity: 0.14,
               color: color,
-              weight: 1,
-              opacity: 0.4,
+              weight: 0.28,
+              opacity: 0.24,
             });
           },
         });

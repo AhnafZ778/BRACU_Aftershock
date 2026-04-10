@@ -133,7 +133,7 @@ export const useAppStore = create<AppState>((set) => ({
   showAllRoads: true,
   setShowAllRoads: (val) => set({ showAllRoads: val, ...(val ? { showRoads: false } : {}) }),
 
-  showHoneycomb: false,
+  showHoneycomb: true,
   setShowHoneycomb: (val) => set({ showHoneycomb: val }),
 
   showControlStations: false,

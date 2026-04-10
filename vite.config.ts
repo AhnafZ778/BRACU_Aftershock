@@ -12,6 +12,12 @@ export default defineConfig({
   },
   server: {
     proxy: {
+      // Take GeoJSON server (must be listed BEFORE /api catch-all)
+      '/api/take': {
+        target: 'http://127.0.0.1:8080',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/take/, '/api'),
+      },
       '/api': {
         target: 'http://localhost:8001',
         changeOrigin: true,

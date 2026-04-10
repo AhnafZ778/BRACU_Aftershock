@@ -3,8 +3,13 @@ import { MapContainer, TileLayer, GeoJSON, Marker, useMap } from 'react-leaflet'
 import L from 'leaflet';
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useTelemetryStore } from '../../store/useTelemetryStore';
+import { useAppStore } from '../../store/useAppStore';
 import { RoadOverlayLayer } from './roads/RoadOverlayLayer';
-import { TelemetryLayer } from './TelemetryLayer';
+import { TakeGeoJsonLayers } from './TakeGeoJsonLayers';
+import { EmployeeHeatmapLayer } from './EmployeeHeatmapLayer';
+import { EmployeeMarkersLayer } from './EmployeeMarkersLayer';
+import { MultiScaleHazardLayer } from './MultiScaleHazardLayer';
+import type { TakeLayerDef } from '../../hooks/useTakeLayers';
 
 // ─── Dhaka center & zoom (close-in view of Dhaka) ───────────────────────
 const BD_CENTER: [number, number] = [23.775, 90.400];
@@ -281,9 +286,16 @@ function FitToView() {
 // ─── Main MapView ───────────────────────────────────────────────────────────
 export function MapView({
   isVisible = true,
+  takeDefs = [],
+  takeActiveIds = new Set<string>(),
+  takeFetchGeoJson,
 }: {
   isVisible?: boolean;
+  takeDefs?: TakeLayerDef[];
+  takeActiveIds?: Set<string>;
+  takeFetchGeoJson?: (layerId: string, bbox: string) => Promise<GeoJSON.FeatureCollection | null>;
 }) {
+  const showHoneycomb = useAppStore((s) => s.showHoneycomb);
   const [maskData, setMaskData] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -352,11 +364,26 @@ export function MapView({
         {/* English-only place labels */}
         <EnglishLabels />
 
+        {/* Compact Dhaka honeycomb risk overlay */}
+        <MultiScaleHazardLayer visible={showHoneycomb} />
+
+        {/* Take GeoJSON Layers (waterways, buildings, POIs, etc.) */}
+        {takeFetchGeoJson && takeDefs.length > 0 && (
+          <TakeGeoJsonLayers
+            defs={takeDefs}
+            activeIds={takeActiveIds}
+            fetchGeoJson={takeFetchGeoJson}
+          />
+        )}
+
         {/* Roads — always on */}
         <RoadOverlayLayer />
 
-        {/* Telemetry (Agents, Mesh Links, DBSCAN Zones) */}
-        <TelemetryLayer />
+        {/* Employee Coverage Heatmap */}
+        <EmployeeHeatmapLayer />
+
+        {/* Employee Markers + Trails */}
+        <EmployeeMarkersLayer />
       </MapContainer>
     </div>
   );
