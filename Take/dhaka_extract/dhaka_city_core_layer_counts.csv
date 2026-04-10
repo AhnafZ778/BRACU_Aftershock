@@ -1,0 +1,15 @@
+layer_name,feature_count
+dhaka_roads,27980
+dhaka_waterways,1817
+dhaka_water,1491
+dhaka_landuse,1182
+dhaka_places,154
+dhaka_pois,16876
+dhaka_transport,604
+dhaka_traffic,1724
+dhaka_transport_areas,39
+dhaka_traffic_areas,146
+dhaka_pofw,1057
+dhaka_health_response_pois,3971
+dhaka_risk_waterways,1817
+dhaka_anchor_point,1

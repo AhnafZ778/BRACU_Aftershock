@@ -1,0 +1,182 @@
+{
+  "generatedAt": "2026-04-10T09:19:16Z",
+  "workspaceRoot": "/home/ahnaf-zakaria/Desktop/Geopkg/bangladesh-260313-free.gpkg",
+  "fileCount": 25,
+  "files": [
+    {
+      "path": "README",
+      "sizeBytes": 656,
+      "modifiedUtc": "2026-03-14T03:29:12Z",
+      "extension": "",
+      "isGeoData": false
+    },
+    {
+      "path": "bangladesh.gpkg",
+      "sizeBytes": 2481721344,
+      "modifiedUtc": "2026-03-14T03:29:11Z",
+      "extension": ".gpkg",
+      "isGeoData": true
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin0.geojson",
+      "sizeBytes": 6512191,
+      "modifiedUtc": "2026-01-26T10:13:04Z",
+      "extension": ".geojson",
+      "isGeoData": true
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin1.geojson",
+      "sizeBytes": 9001461,
+      "modifiedUtc": "2026-01-26T10:13:04Z",
+      "extension": ".geojson",
+      "isGeoData": true
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin2.geojson",
+      "sizeBytes": 20727751,
+      "modifiedUtc": "2026-01-26T10:13:04Z",
+      "extension": ".geojson",
+      "isGeoData": true
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin3.geojson",
+      "sizeBytes": 50665834,
+      "modifiedUtc": "2026-01-26T10:13:06Z",
+      "extension": ".geojson",
+      "isGeoData": true
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admincapitals.geojson",
+      "sizeBytes": 432294,
+      "modifiedUtc": "2026-01-26T10:13:06Z",
+      "extension": ".geojson",
+      "isGeoData": true
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_adminlines.geojson",
+      "sizeBytes": 31457816,
+      "modifiedUtc": "2026-01-26T10:13:08Z",
+      "extension": ".geojson",
+      "isGeoData": true
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_adminpoints.geojson",
+      "sizeBytes": 5397578,
+      "modifiedUtc": "2026-01-26T10:13:08Z",
+      "extension": ".geojson",
+      "isGeoData": true
+    },
+    {
+      "path": "dhaka_extract/dhaka_admin_boundaries.gpkg",
+      "sizeBytes": 827392,
+      "modifiedUtc": "2026-04-10T08:38:07Z",
+      "extension": ".gpkg",
+      "isGeoData": true
+    },
+    {
+      "path": "dhaka_extract/dhaka_admin_layer_counts.csv",
+      "sizeBytes": 115,
+      "modifiedUtc": "2026-04-10T08:47:43Z",
+      "extension": ".csv",
+      "isGeoData": false
+    },
+    {
+      "path": "dhaka_extract/dhaka_city_buildings.gpkg",
+      "sizeBytes": 116887552,
+      "modifiedUtc": "2026-04-10T08:45:21Z",
+      "extension": ".gpkg",
+      "isGeoData": true
+    },
+    {
+      "path": "dhaka_extract/dhaka_city_buildings_count.csv",
+      "sizeBytes": 48,
+      "modifiedUtc": "2026-04-10T08:47:43Z",
+      "extension": ".csv",
+      "isGeoData": false
+    },
+    {
+      "path": "dhaka_extract/dhaka_city_core_layer_counts.csv",
+      "sizeBytes": 317,
+      "modifiedUtc": "2026-04-10T08:47:43Z",
+      "extension": ".csv",
+      "isGeoData": false
+    },
+    {
+      "path": "dhaka_extract/dhaka_city_core_layers.gpkg",
+      "sizeBytes": 13840384,
+      "modifiedUtc": "2026-04-10T08:46:30Z",
+      "extension": ".gpkg",
+      "isGeoData": true
+    },
+    {
+      "path": "dhaka_extract/dhaka_city_notes.txt",
+      "sizeBytes": 633,
+      "modifiedUtc": "2026-04-10T08:46:58Z",
+      "extension": ".txt",
+      "isGeoData": false
+    },
+    {
+      "path": "dhaka_extract/dhaka_required_layers.gpkg",
+      "sizeBytes": 281481216,
+      "modifiedUtc": "2026-04-10T08:13:47Z",
+      "extension": ".gpkg",
+      "isGeoData": true
+    },
+    {
+      "path": "dhaka_extract/extraction_notes.txt",
+      "sizeBytes": 339,
+      "modifiedUtc": "2026-04-10T08:13:48Z",
+      "extension": ".txt",
+      "isGeoData": false
+    },
+    {
+      "path": "dhaka_extract/layer_counts.csv",
+      "sizeBytes": 341,
+      "modifiedUtc": "2026-04-10T08:14:20Z",
+      "extension": ".csv",
+      "isGeoData": false
+    },
+    {
+      "path": "webmap/README.md",
+      "sizeBytes": 931,
+      "modifiedUtc": "2026-04-10T08:53:56Z",
+      "extension": ".md",
+      "isGeoData": false
+    },
+    {
+      "path": "webmap/__pycache__/server.cpython-312.pyc",
+      "sizeBytes": 12643,
+      "modifiedUtc": "2026-04-10T09:14:20Z",
+      "extension": ".pyc",
+      "isGeoData": false
+    },
+    {
+      "path": "webmap/app.js",
+      "sizeBytes": 10248,
+      "modifiedUtc": "2026-04-10T09:13:52Z",
+      "extension": ".js",
+      "isGeoData": false
+    },
+    {
+      "path": "webmap/index.html",
+      "sizeBytes": 1815,
+      "modifiedUtc": "2026-04-10T08:52:53Z",
+      "extension": ".html",
+      "isGeoData": false
+    },
+    {
+      "path": "webmap/server.py",
+      "sizeBytes": 11786,
+      "modifiedUtc": "2026-04-10T09:13:41Z",
+      "extension": ".py",
+      "isGeoData": false
+    },
+    {
+      "path": "webmap/styles.css",
+      "sizeBytes": 2981,
+      "modifiedUtc": "2026-04-10T08:52:30Z",
+      "extension": ".css",
+      "isGeoData": false
+    }
+  ]
+}

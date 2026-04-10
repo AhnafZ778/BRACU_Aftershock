@@ -1,0 +1,4308 @@
+{
+  "generatedAt": "2026-04-10T09:19:16Z",
+  "sourceCount": 12,
+  "sources": [
+    {
+      "path": "bangladesh.gpkg",
+      "driverShortName": "GPKG",
+      "driverLongName": "GeoPackage",
+      "layerCount": 18,
+      "layers": [
+        {
+          "name": "gis_osm_traffic_free",
+          "featureCount": 16087,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1548548,
+            21.1358691,
+            92.5893749,
+            26.6464809
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_transport_free",
+          "featureCount": 4431,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1420614,
+            20.6266397,
+            92.6200166,
+            26.3960696
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_places_free",
+          "featureCount": 5376,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.0797051,
+            20.5809886,
+            92.6817482,
+            26.6330944
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "population",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_pois_free",
+          "featureCount": 47164,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.0549774,
+            20.6045264,
+            92.6032585,
+            26.6367152
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_pofw_free",
+          "featureCount": 9434,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1425877,
+            20.7589788,
+            92.4616236,
+            26.6379185
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_natural_free",
+          "featureCount": 73945,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1832109,
+            20.5765826,
+            92.6095448,
+            26.406858
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_roads_free",
+          "featureCount": 493912,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            87.9582167,
+            20.5761394,
+            92.6917088,
+            26.6521214
+          ],
+          "fieldCount": 10,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "ref",
+              "type": "String",
+              "width": 20,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "oneway",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "maxspeed",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "layer",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "bridge",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "tunnel",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_waterways_free",
+          "featureCount": 38086,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            87.923423,
+            20.6284948,
+            92.9682462,
+            26.8666193
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "width",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_railways_free",
+          "featureCount": 2699,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1741902,
+            21.4051778,
+            92.4935438,
+            26.4002306
+          ],
+          "fieldCount": 7,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "layer",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "bridge",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "tunnel",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_pois_a_free",
+          "featureCount": 18027,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1015109,
+            20.6217341,
+            92.5878019,
+            26.643287
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_landuse_a_free",
+          "featureCount": 89641,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.0036455,
+            20.5764657,
+            92.6831853,
+            26.6464398
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_water_a_free",
+          "featureCount": 409252,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            87.922203,
+            20.6004599,
+            92.6223472,
+            26.7822817
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_places_a_free",
+          "featureCount": 572,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.0669427,
+            20.5758846,
+            92.5340259,
+            26.3100687
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "population",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_buildings_a_free",
+          "featureCount": 11043197,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.070631,
+            20.5909199,
+            92.6763227,
+            26.6461234
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "width": 20,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_traffic_a_free",
+          "featureCount": 1623,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1402099,
+            20.632271,
+            92.4793561,
+            26.6125067
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_transport_a_free",
+          "featureCount": 591,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1428697,
+            20.6265518,
+            92.6547418,
+            26.4546035
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_pofw_a_free",
+          "featureCount": 4157,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.1312203,
+            21.2112404,
+            92.5003251,
+            26.6405073
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "gis_osm_natural_a_free",
+          "featureCount": 55,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            88.6764076,
+            20.5929582,
+            92.3364428,
+            25.7710752
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin0.geojson",
+      "driverShortName": "GeoJSON",
+      "driverLongName": "GeoJSON",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "bgd_admin0",
+          "featureCount": 1,
+          "fidColumnName": null,
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "",
+          "extent": [
+            88.00816912400006,
+            20.590608254000188,
+            92.68005782300008,
+            26.634548266000024
+          ],
+          "fieldCount": 18,
+          "fields": [
+            {
+              "name": "iso2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "iso3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin1.geojson",
+      "driverShortName": "GeoJSON",
+      "driverLongName": "GeoJSON",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "bgd_admin1",
+          "featureCount": 8,
+          "fidColumnName": null,
+          "geometryType": "Geometry",
+          "geometryFieldName": "",
+          "extent": [
+            88.00816912400006,
+            20.590608254000188,
+            92.68005782300008,
+            26.634548266000024
+          ],
+          "fieldCount": 21,
+          "fields": [
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin2.geojson",
+      "driverShortName": "GeoJSON",
+      "driverLongName": "GeoJSON",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "bgd_admin2",
+          "featureCount": 64,
+          "fidColumnName": null,
+          "geometryType": "Geometry",
+          "geometryFieldName": "",
+          "extent": [
+            88.00816912400006,
+            20.590608254000188,
+            92.68005782300008,
+            26.634548266000024
+          ],
+          "fieldCount": 26,
+          "fields": [
+            {
+              "name": "adm2_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admin3.geojson",
+      "driverShortName": "GeoJSON",
+      "driverLongName": "GeoJSON",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "bgd_admin3",
+          "featureCount": 507,
+          "fidColumnName": null,
+          "geometryType": "Geometry",
+          "geometryFieldName": "",
+          "extent": [
+            88.00816912400006,
+            20.590608254000188,
+            92.68005782300008,
+            26.634548266000024
+          ],
+          "fieldCount": 31,
+          "fields": [
+            {
+              "name": "adm3_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_admincapitals.geojson",
+      "driverShortName": "GeoJSON",
+      "driverLongName": "GeoJSON",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "bgd_admincapitals",
+          "featureCount": 507,
+          "fidColumnName": null,
+          "geometryType": "Point",
+          "geometryFieldName": "",
+          "extent": [
+            88.12973760000006,
+            20.86845660000006,
+            92.43095780000004,
+            26.492075700000044
+          ],
+          "fieldCount": 35,
+          "fields": [
+            {
+              "name": "adm_p_lvl",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name_1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name_2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name_3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "loc_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "x_coord",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "y_coord",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name_lng",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name_lng1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name_lng2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name_lng3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_adminlines.geojson",
+      "driverShortName": "GeoJSON",
+      "driverLongName": "GeoJSON",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "bgd_adminlines",
+          "featureCount": 2916,
+          "fidColumnName": null,
+          "geometryType": "LineString",
+          "geometryFieldName": "",
+          "extent": [
+            88.00816912400006,
+            20.590608801000144,
+            92.68005782300008,
+            26.634548266000024
+          ],
+          "fieldCount": 7,
+          "fields": [
+            {
+              "name": "adm_level",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "right_pcod",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "left_pcod",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "bgd_admin_boundaries (2).geojson/bgd_adminpoints.geojson",
+      "driverShortName": "GeoJSON",
+      "driverLongName": "GeoJSON",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "bgd_adminpoints",
+          "featureCount": 5777,
+          "fidColumnName": null,
+          "geometryType": "Point",
+          "geometryFieldName": "",
+          "extent": [
+            88.06167104500008,
+            20.613231171,
+            92.56639161800013,
+            26.601913420000017
+          ],
+          "fieldCount": 39,
+          "fields": [
+            {
+              "name": "admin_level",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "x_coord",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "y_coord",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm4_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm4_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm4_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm4_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm4_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "dhaka_extract/dhaka_admin_boundaries.gpkg",
+      "driverShortName": "GPKG",
+      "driverLongName": "GeoPackage",
+      "layerCount": 5,
+      "layers": [
+        {
+          "name": "dhaka_admin1",
+          "featureCount": 1,
+          "fidColumnName": "fid",
+          "geometryType": "Geometry",
+          "geometryFieldName": "GEOMETRY",
+          "extent": [
+            89.2964942730002,
+            22.845963103,
+            91.2566797310001,
+            24.787018864
+          ],
+          "fieldCount": 21,
+          "fields": [
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_admin2",
+          "featureCount": 1,
+          "fidColumnName": "fid",
+          "geometryType": "Geometry",
+          "geometryFieldName": "GEOMETRY",
+          "extent": [
+            90.004625923,
+            23.5266980090001,
+            90.5119807040002,
+            24.0457466340001
+          ],
+          "fieldCount": 26,
+          "fields": [
+            {
+              "name": "adm2_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_admin3",
+          "featureCount": 7,
+          "fidColumnName": "fid",
+          "geometryType": "Geometry",
+          "geometryFieldName": "GEOMETRY",
+          "extent": [
+            90.004625923,
+            23.5266980090001,
+            90.5119807040002,
+            24.0457466340001
+          ],
+          "fieldCount": 31,
+          "fields": [
+            {
+              "name": "adm3_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_city_corporations",
+          "featureCount": 2,
+          "fidColumnName": "fid",
+          "geometryType": "Geometry",
+          "geometryFieldName": "GEOMETRY",
+          "extent": [
+            90.3289075470001,
+            23.6691871400001,
+            90.5119807040002,
+            23.9006935900001
+          ],
+          "fieldCount": 31,
+          "fields": [
+            {
+              "name": "adm3_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm2_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm1_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_name3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm0_pcode",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_on",
+              "type": "Date",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "valid_to",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "area_sqkm",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "version",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang1",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang2",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "lang3",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "adm3_ref_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lat",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "center_lon",
+              "type": "Real",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_city_union",
+          "featureCount": 1,
+          "fidColumnName": "fid",
+          "geometryType": "Geometry",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3289075470001,
+            23.6691871400001,
+            90.5119807040002,
+            23.9006935900001
+          ],
+          "fieldCount": 1,
+          "fields": [
+            {
+              "name": "boundary_name",
+              "type": "String",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "dhaka_extract/dhaka_city_buildings.gpkg",
+      "driverShortName": "GPKG",
+      "driverLongName": "GeoPackage",
+      "layerCount": 1,
+      "layers": [
+        {
+          "name": "dhaka_buildings",
+          "featureCount": 494510,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3305285,
+            23.6696205,
+            90.509801,
+            23.8995658
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "width": 20,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "dhaka_extract/dhaka_city_core_layers.gpkg",
+      "driverShortName": "GPKG",
+      "driverLongName": "GeoPackage",
+      "layerCount": 14,
+      "layers": [
+        {
+          "name": "dhaka_roads",
+          "featureCount": 27980,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3303998,
+            23.6693121186307,
+            90.5108626236256,
+            23.8996682284688
+          ],
+          "fieldCount": 10,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "ref",
+              "type": "String",
+              "width": 20,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "oneway",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "maxspeed",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "layer",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "bridge",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "tunnel",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_waterways",
+          "featureCount": 1817,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.32915,
+            23.6732971,
+            90.5117963477533,
+            23.9003113744911
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "width",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_water",
+          "featureCount": 1491,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3289075470001,
+            23.6696819454786,
+            90.5119807040002,
+            23.9005612757886
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_landuse",
+          "featureCount": 1182,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3330103,
+            23.6721538,
+            90.508673,
+            23.8915657531301
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_places",
+          "featureCount": 154,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3399148,
+            23.6855403,
+            90.4974041,
+            23.8942819
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "population",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_pois",
+          "featureCount": 16876,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3377247,
+            23.6735375,
+            90.4980671,
+            23.8973513
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_transport",
+          "featureCount": 604,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3365448,
+            23.6840321,
+            90.493284,
+            23.8971907
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_traffic",
+          "featureCount": 1724,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3350485,
+            23.6700221,
+            90.4908094,
+            23.8944164
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_transport_areas",
+          "featureCount": 39,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3395593,
+            23.706305792,
+            90.4287806,
+            23.8917069
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_traffic_areas",
+          "featureCount": 146,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3401748,
+            23.6788264,
+            90.4618882,
+            23.852759
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_pofw",
+          "featureCount": 1057,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3377628,
+            23.6734539,
+            90.491351,
+            23.8962918
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_health_response_pois",
+          "featureCount": 3971,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3377247,
+            23.6735689,
+            90.4971725,
+            23.8941807
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_risk_waterways",
+          "featureCount": 1817,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.32915,
+            23.6732971,
+            90.5117963477533,
+            23.9003113744911
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "width",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_anchor_point",
+          "featureCount": 1,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3890144,
+            23.7643863,
+            90.3890144,
+            23.7643863
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "population",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "dhaka_extract/dhaka_required_layers.gpkg",
+      "driverShortName": "GPKG",
+      "driverLongName": "GeoPackage",
+      "layerCount": 15,
+      "layers": [
+        {
+          "name": "dhaka_roads",
+          "featureCount": 45647,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.1415145,
+            23.6098393,
+            90.588474,
+            24.0001952
+          ],
+          "fieldCount": 10,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "ref",
+              "type": "String",
+              "width": 20,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "oneway",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "maxspeed",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "layer",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "bridge",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "tunnel",
+              "type": "String",
+              "width": 1,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_waterways",
+          "featureCount": 2255,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            89.9424059,
+            23.5686363,
+            90.6125589,
+            24.1401928
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "width",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_water",
+          "featureCount": 6012,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.069775,
+            23.5683599,
+            90.6137402,
+            24.0093411
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_landuse",
+          "featureCount": 2215,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.17502,
+            23.6362926,
+            90.5558181,
+            23.9530936
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_places",
+          "featureCount": 245,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.2138357,
+            23.6503507,
+            90.5451558,
+            23.9452074
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "population",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_pois",
+          "featureCount": 18836,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.2000553,
+            23.6502114,
+            90.5499616,
+            23.9499182
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_transport",
+          "featureCount": 930,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.2065346,
+            23.6507692,
+            90.5484454,
+            23.9497993
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_traffic",
+          "featureCount": 3885,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.2022723,
+            23.6530059,
+            90.5490513,
+            23.9497702
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_buildings",
+          "featureCount": 1051826,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.1997649,
+            23.6492208,
+            90.5514814,
+            23.9509186
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "width": 20,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_transport_areas",
+          "featureCount": 71,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.233805,
+            23.6643686,
+            90.5267229,
+            23.9362661
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_traffic_areas",
+          "featureCount": 255,
+          "fidColumnName": "fid",
+          "geometryType": "MultiPolygon",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.2410606,
+            23.6506871,
+            90.5497914,
+            23.9366623
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_pofw",
+          "featureCount": 1423,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.2007527,
+            23.655297,
+            90.5394169,
+            23.9488047
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_health_response_pois",
+          "featureCount": 4558,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.2000553,
+            23.6577387,
+            90.5499616,
+            23.9499144
+          ],
+          "fieldCount": 4,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_risk_waterways",
+          "featureCount": 2255,
+          "fidColumnName": "fid",
+          "geometryType": "LineString",
+          "geometryFieldName": "geom",
+          "extent": [
+            89.9424059,
+            23.5686363,
+            90.6125589,
+            24.1401928
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "width",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        },
+        {
+          "name": "dhaka_anchor_point",
+          "featureCount": 1,
+          "fidColumnName": "fid",
+          "geometryType": "Point",
+          "geometryFieldName": "geom",
+          "extent": [
+            90.3890144,
+            23.7643863,
+            90.3890144,
+            23.7643863
+          ],
+          "fieldCount": 5,
+          "fields": [
+            {
+              "name": "osm_id",
+              "type": "String",
+              "width": 12,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "code",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "fclass",
+              "type": "String",
+              "width": 28,
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "population",
+              "type": "Integer",
+              "nullable": true,
+              "uniqueConstraint": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "width": 100,
+              "nullable": true,
+              "uniqueConstraint": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

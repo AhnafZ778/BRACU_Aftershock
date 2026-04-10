@@ -1,0 +1,61 @@
+source_path,layer_name,geometry_type,feature_count,bbox_minx_miny_maxx_maxy,field_count,key_fields_preview
+bangladesh.gpkg,gis_osm_traffic_free,Point,16087,"88.1548548,21.1358691,92.5893749,26.6464809",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_transport_free,Point,4431,"88.1420614,20.6266397,92.6200166,26.3960696",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_places_free,Point,5376,"88.0797051,20.5809886,92.6817482,26.6330944",5,osm_id;code;fclass;population;name
+bangladesh.gpkg,gis_osm_pois_free,Point,47164,"88.0549774,20.6045264,92.6032585,26.6367152",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_pofw_free,Point,9434,"88.1425877,20.7589788,92.4616236,26.6379185",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_natural_free,Point,73945,"88.1832109,20.5765826,92.6095448,26.406858",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_roads_free,LineString,493912,"87.9582167,20.5761394,92.6917088,26.6521214",10,osm_id;code;fclass;name;ref;oneway;maxspeed;layer
+bangladesh.gpkg,gis_osm_waterways_free,LineString,38086,"87.923423,20.6284948,92.9682462,26.8666193",5,osm_id;code;fclass;width;name
+bangladesh.gpkg,gis_osm_railways_free,LineString,2699,"88.1741902,21.4051778,92.4935438,26.4002306",7,osm_id;code;fclass;name;layer;bridge;tunnel
+bangladesh.gpkg,gis_osm_pois_a_free,MultiPolygon,18027,"88.1015109,20.6217341,92.5878019,26.643287",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_landuse_a_free,MultiPolygon,89641,"88.0036455,20.5764657,92.6831853,26.6464398",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_water_a_free,MultiPolygon,409252,"87.922203,20.6004599,92.6223472,26.7822817",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_places_a_free,MultiPolygon,572,"88.0669427,20.5758846,92.5340259,26.3100687",5,osm_id;code;fclass;population;name
+bangladesh.gpkg,gis_osm_buildings_a_free,MultiPolygon,11043197,"88.070631,20.5909199,92.6763227,26.6461234",5,osm_id;code;fclass;name;type
+bangladesh.gpkg,gis_osm_traffic_a_free,MultiPolygon,1623,"88.1402099,20.632271,92.4793561,26.6125067",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_transport_a_free,MultiPolygon,591,"88.1428697,20.6265518,92.6547418,26.4546035",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_pofw_a_free,MultiPolygon,4157,"88.1312203,21.2112404,92.5003251,26.6405073",4,osm_id;code;fclass;name
+bangladesh.gpkg,gis_osm_natural_a_free,MultiPolygon,55,"88.6764076,20.5929582,92.3364428,25.7710752",4,osm_id;code;fclass;name
+bgd_admin_boundaries (2).geojson/bgd_admin0.geojson,bgd_admin0,MultiPolygon,1,"88.00816912400006,20.590608254000188,92.68005782300008,26.634548266000024",18,iso2;iso3;adm0_name;adm0_name1;adm0_name2;adm0_name3;adm0_pcode;valid_on
+bgd_admin_boundaries (2).geojson/bgd_admin1.geojson,bgd_admin1,Geometry,8,"88.00816912400006,20.590608254000188,92.68005782300008,26.634548266000024",21,adm1_name;adm1_name1;adm1_name2;adm1_name3;adm1_pcode;adm0_name;adm0_name1;adm0_name2
+bgd_admin_boundaries (2).geojson/bgd_admin2.geojson,bgd_admin2,Geometry,64,"88.00816912400006,20.590608254000188,92.68005782300008,26.634548266000024",26,adm2_name;adm2_name1;adm2_name2;adm2_name3;adm2_pcode;adm1_name;adm1_name1;adm1_name2
+bgd_admin_boundaries (2).geojson/bgd_admin3.geojson,bgd_admin3,Geometry,507,"88.00816912400006,20.590608254000188,92.68005782300008,26.634548266000024",31,adm3_name;adm3_name1;adm3_name2;adm3_name3;adm3_pcode;adm2_name;adm2_name1;adm2_name2
+bgd_admin_boundaries (2).geojson/bgd_admincapitals.geojson,bgd_admincapitals,Point,507,"88.12973760000006,20.86845660000006,92.43095780000004,26.492075700000044",35,adm_p_lvl;name;name_1;name_2;name_3;loc_pcode;x_coord;y_coord
+bgd_admin_boundaries (2).geojson/bgd_adminlines.geojson,bgd_adminlines,LineString,2916,"88.00816912400006,20.590608801000144,92.68005782300008,26.634548266000024",7,adm_level;name;valid_on;valid_to;version;right_pcod;left_pcod
+bgd_admin_boundaries (2).geojson/bgd_adminpoints.geojson,bgd_adminpoints,Point,5777,"88.06167104500008,20.613231171,92.56639161800013,26.601913420000017",39,admin_level;name;name1;name2;name3;x_coord;y_coord;adm4_name
+dhaka_extract/dhaka_admin_boundaries.gpkg,dhaka_admin1,Geometry,1,"89.2964942730002,22.845963103,91.2566797310001,24.787018864",21,adm1_name;adm1_name1;adm1_name2;adm1_name3;adm1_pcode;adm0_name;adm0_name1;adm0_name2
+dhaka_extract/dhaka_admin_boundaries.gpkg,dhaka_admin2,Geometry,1,"90.004625923,23.5266980090001,90.5119807040002,24.0457466340001",26,adm2_name;adm2_name1;adm2_name2;adm2_name3;adm2_pcode;adm1_name;adm1_name1;adm1_name2
+dhaka_extract/dhaka_admin_boundaries.gpkg,dhaka_admin3,Geometry,7,"90.004625923,23.5266980090001,90.5119807040002,24.0457466340001",31,adm3_name;adm3_name1;adm3_name2;adm3_name3;adm3_pcode;adm2_name;adm2_name1;adm2_name2
+dhaka_extract/dhaka_admin_boundaries.gpkg,dhaka_city_corporations,Geometry,2,"90.3289075470001,23.6691871400001,90.5119807040002,23.9006935900001",31,adm3_name;adm3_name1;adm3_name2;adm3_name3;adm3_pcode;adm2_name;adm2_name1;adm2_name2
+dhaka_extract/dhaka_admin_boundaries.gpkg,dhaka_city_union,Geometry,1,"90.3289075470001,23.6691871400001,90.5119807040002,23.9006935900001",1,boundary_name
+dhaka_extract/dhaka_city_buildings.gpkg,dhaka_buildings,MultiPolygon,494510,"90.3305285,23.6696205,90.509801,23.8995658",5,osm_id;code;fclass;name;type
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_roads,LineString,27980,"90.3303998,23.6693121186307,90.5108626236256,23.8996682284688",10,osm_id;code;fclass;name;ref;oneway;maxspeed;layer
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_waterways,LineString,1817,"90.32915,23.6732971,90.5117963477533,23.9003113744911",5,osm_id;code;fclass;width;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_water,MultiPolygon,1491,"90.3289075470001,23.6696819454786,90.5119807040002,23.9005612757886",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_landuse,MultiPolygon,1182,"90.3330103,23.6721538,90.508673,23.8915657531301",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_places,Point,154,"90.3399148,23.6855403,90.4974041,23.8942819",5,osm_id;code;fclass;population;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_pois,Point,16876,"90.3377247,23.6735375,90.4980671,23.8973513",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_transport,Point,604,"90.3365448,23.6840321,90.493284,23.8971907",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_traffic,Point,1724,"90.3350485,23.6700221,90.4908094,23.8944164",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_transport_areas,MultiPolygon,39,"90.3395593,23.706305792,90.4287806,23.8917069",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_traffic_areas,MultiPolygon,146,"90.3401748,23.6788264,90.4618882,23.852759",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_pofw,Point,1057,"90.3377628,23.6734539,90.491351,23.8962918",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_health_response_pois,Point,3971,"90.3377247,23.6735689,90.4971725,23.8941807",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_risk_waterways,LineString,1817,"90.32915,23.6732971,90.5117963477533,23.9003113744911",5,osm_id;code;fclass;name;width
+dhaka_extract/dhaka_city_core_layers.gpkg,dhaka_anchor_point,Point,1,"90.3890144,23.7643863,90.3890144,23.7643863",5,osm_id;code;fclass;population;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_roads,LineString,45647,"90.1415145,23.6098393,90.588474,24.0001952",10,osm_id;code;fclass;name;ref;oneway;maxspeed;layer
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_waterways,LineString,2255,"89.9424059,23.5686363,90.6125589,24.1401928",5,osm_id;code;fclass;width;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_water,MultiPolygon,6012,"90.069775,23.5683599,90.6137402,24.0093411",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_landuse,MultiPolygon,2215,"90.17502,23.6362926,90.5558181,23.9530936",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_places,Point,245,"90.2138357,23.6503507,90.5451558,23.9452074",5,osm_id;code;fclass;population;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_pois,Point,18836,"90.2000553,23.6502114,90.5499616,23.9499182",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_transport,Point,930,"90.2065346,23.6507692,90.5484454,23.9497993",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_traffic,Point,3885,"90.2022723,23.6530059,90.5490513,23.9497702",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_buildings,MultiPolygon,1051826,"90.1997649,23.6492208,90.5514814,23.9509186",5,osm_id;code;fclass;name;type
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_transport_areas,MultiPolygon,71,"90.233805,23.6643686,90.5267229,23.9362661",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_traffic_areas,MultiPolygon,255,"90.2410606,23.6506871,90.5497914,23.9366623",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_pofw,Point,1423,"90.2007527,23.655297,90.5394169,23.9488047",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_health_response_pois,Point,4558,"90.2000553,23.6577387,90.5499616,23.9499144",4,osm_id;code;fclass;name
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_risk_waterways,LineString,2255,"89.9424059,23.5686363,90.6125589,24.1401928",5,osm_id;code;fclass;name;width
+dhaka_extract/dhaka_required_layers.gpkg,dhaka_anchor_point,Point,1,"90.3890144,23.7643863,90.3890144,23.7643863",5,osm_id;code;fclass;population;name

@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-04-10T09:19:16Z",
+  "files": [
+    {
+      "path": "webmap/README.md",
+      "sizeBytes": 931,
+      "sha256": "b69f873286842ae1373f99bfd7aabe1188bbc2dc20da5f22990a1f2a10390776",
+      "lineCount": 37
+    },
+    {
+      "path": "webmap/app.js",
+      "sizeBytes": 10248,
+      "sha256": "90c29a39986038214731dec3a996ba87173ac32f0aaa1fe57adb0085c702d644",
+      "lineCount": 401
+    },
+    {
+      "path": "webmap/index.html",
+      "sizeBytes": 1815,
+      "sha256": "1b8674a8fe82928f1055494ffd60c0108758ed94709ebbd77e573efe8c5cf273",
+      "lineCount": 56
+    },
+    {
+      "path": "webmap/server.py",
+      "sizeBytes": 11786,
+      "sha256": "ff380e20157930d19ee562274413fd9c58dcab19aad5ba540637c1b9bd1d312f",
+      "lineCount": 435
+    },
+    {
+      "path": "webmap/styles.css",
+      "sizeBytes": 2981,
+      "sha256": "e044c07e28fa73f1d73b435fcc02dc42427e62dc8b519b68356a8c26b0d97868",
+      "lineCount": 182
+    }
+  ]
+}

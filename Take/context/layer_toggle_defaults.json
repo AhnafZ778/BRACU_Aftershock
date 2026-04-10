@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-04-10T09:19:16Z",
+  "fromApiSnapshot": true,
+  "defaultVisibleLayerIds": [
+    "dhaka_waterways",
+    "dhaka_risk_waterways",
+    "dhaka_water"
+  ],
+  "layers": [
+    {
+      "id": "dhaka_city_union",
+      "label": "Dhaka City Union (DNCC + DSCC)",
+      "category": "Boundaries",
+      "geometryKind": "polygon",
+      "color": "#f8fafc",
+      "fillColor": "#0ea5a500",
+      "defaultVisible": false,
+      "maxFeatures": 5
+    },
+    {
+      "id": "dhaka_city_corporations",
+      "label": "City Corporations",
+      "category": "Boundaries",
+      "geometryKind": "polygon",
+      "color": "#22d3ee",
+      "fillColor": "#0891b200",
+      "defaultVisible": false,
+      "maxFeatures": 10
+    },
+    {
+      "id": "dhaka_admin3",
+      "label": "Dhaka District ADM3 Units",
+      "category": "Boundaries",
+      "geometryKind": "polygon",
+      "color": "#94a3b8",
+      "fillColor": "#64748b00",
+      "defaultVisible": false,
+      "maxFeatures": 10
+    },
+    {
+      "id": "dhaka_roads",
+      "label": "Roads",
+      "category": "Mobility",
+      "geometryKind": "line",
+      "color": "#cbd5e1",
+      "fillColor": "#00000000",
+      "defaultVisible": false,
+      "maxFeatures": 12000
+    },
+    {
+      "id": "dhaka_transport",
+      "label": "Transport Points",
+      "category": "Mobility",
+      "geometryKind": "point",
+      "color": "#f59e0b",
+      "fillColor": "#f59e0b",
+      "defaultVisible": false,
+      "maxFeatures": 5000
+    },
+    {
+      "id": "dhaka_transport_areas",
+      "label": "Transport Areas",
+      "category": "Mobility",
+      "geometryKind": "polygon",
+      "color": "#f59e0b",
+      "fillColor": "#f59e0b22",
+      "defaultVisible": false,
+      "maxFeatures": 1000
+    },
+    {
+      "id": "dhaka_traffic",
+      "label": "Traffic Points",
+      "category": "Mobility",
+      "geometryKind": "point",
+      "color": "#fb7185",
+      "fillColor": "#fb7185",
+      "defaultVisible": false,
+      "maxFeatures": 5000
+    },
+    {
+      "id": "dhaka_traffic_areas",
+      "label": "Traffic Areas",
+      "category": "Mobility",
+      "geometryKind": "polygon",
+      "color": "#e11d48",
+      "fillColor": "#e11d4820",
+      "defaultVisible": false,
+      "maxFeatures": 1000
+    },
+    {
+      "id": "dhaka_waterways",
+      "label": "Waterways",
+      "category": "Hydrology",
+      "geometryKind": "line",
+      "color": "#38bdf8",
+      "fillColor": "#00000000",
+      "defaultVisible": true,
+      "maxFeatures": 8000
+    },
+    {
+      "id": "dhaka_risk_waterways",
+      "label": "Risk Waterways (Drain/Canal/River)",
+      "category": "Hydrology",
+      "geometryKind": "line",
+      "color": "#0ea5e9",
+      "fillColor": "#00000000",
+      "defaultVisible": true,
+      "maxFeatures": 8000
+    },
+    {
+      "id": "dhaka_water",
+      "label": "Water Bodies",
+      "category": "Hydrology",
+      "geometryKind": "polygon",
+      "color": "#38bdf8",
+      "fillColor": "#38bdf833",
+      "defaultVisible": true,
+      "maxFeatures": 4000
+    },
+    {
+      "id": "dhaka_landuse",
+      "label": "Landuse",
+      "category": "Environment",
+      "geometryKind": "polygon",
+      "color": "#86efac",
+      "fillColor": "#22c55e22",
+      "defaultVisible": false,
+      "maxFeatures": 5000
+    },
+    {
+      "id": "dhaka_places",
+      "label": "Places",
+      "category": "Context",
+      "geometryKind": "point",
+      "color": "#f8fafc",
+      "fillColor": "#f8fafc",
+      "defaultVisible": false,
+      "maxFeatures": 2000
+    },
+    {
+      "id": "dhaka_pois",
+      "label": "POIs",
+      "category": "Services",
+      "geometryKind": "point",
+      "color": "#a78bfa",
+      "fillColor": "#a78bfa",
+      "defaultVisible": false,
+      "maxFeatures": 9000
+    },
+    {
+      "id": "dhaka_pofw",
+      "label": "Places of Worship",
+      "category": "Services",
+      "geometryKind": "point",
+      "color": "#60a5fa",
+      "fillColor": "#60a5fa",
+      "defaultVisible": false,
+      "maxFeatures": 4000
+    },
+    {
+      "id": "dhaka_health_response_pois",
+      "label": "Health & Response POIs",
+      "category": "Public Health",
+      "geometryKind": "point",
+      "color": "#f97316",
+      "fillColor": "#f97316",
+      "defaultVisible": false,
+      "maxFeatures": 7000
+    },
+    {
+      "id": "dhaka_anchor_point",
+      "label": "Dhaka Anchor",
+      "category": "Context",
+      "geometryKind": "point",
+      "color": "#f43f5e",
+      "fillColor": "#f43f5e",
+      "defaultVisible": false,
+      "maxFeatures": 10
+    },
+    {
+      "id": "dhaka_buildings",
+      "label": "Buildings",
+      "category": "Exposure",
+      "geometryKind": "polygon",
+      "color": "#fbbf24",
+      "fillColor": "#fbbf2420",
+      "defaultVisible": false,
+      "maxFeatures": 12000
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Boundary source: uploaded admin boundary GeoJSON folder
+Used exact city boundary from ADM3 by union of:
+- Dhaka North City Corporation
+- Dhaka South City Corporation
+
+Outputs:
+- dhaka_admin_boundaries.gpkg (admin reference layers)
+- dhaka_city_core_layers.gpkg (all map/risk layers except buildings)
+- dhaka_city_buildings.gpkg (city-clipped building footprints)
+- dhaka_admin_layer_counts.csv
+- dhaka_city_core_layer_counts.csv
+- dhaka_city_buildings_count.csv
+
+Important:
+- This uploaded package includes ADM1-ADM3 only; no ADM4 ward polygons were present.
+- Dengue case/weather/vector surveillance data are still external inputs.
