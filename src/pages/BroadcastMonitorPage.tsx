@@ -336,7 +336,7 @@ export function BroadcastMonitorPage() {
                 {/* PANE 2: Central Geospatial Map */}
                 <div className="flex-1 relative z-0 h-full bg-black">
                   <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-10" />
-                  <MapView performanceMode="lite" />
+                  <MapView />
                   {/* Map overlay hint */}
                   <div className="absolute top-4 left-1/2 -translate-x-1/2 z-[400] pointer-events-none">
                     <span className="px-3 py-1 bg-zinc-900/80 backdrop-blur rounded-full text-[10px] font-mono text-zinc-400 border border-zinc-800/80 flex items-center gap-2 shadow-xl">

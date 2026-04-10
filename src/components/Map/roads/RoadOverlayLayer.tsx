@@ -15,29 +15,29 @@ import L from 'leaflet';
 import { useAppStore } from '../../../store/useAppStore';
 import { useRoadTiles } from './useRoadTiles';
 
-// ─── Road Type Styling (Bold dark colors for white map) ─────────
+// ─── Road Type Styling (Dark colors for white map, moderate weight) ──
 const ROAD_STYLES: Record<string, { color: string; weight: number; label: string }> = {
-  motorway:       { color: '#b91c1c', weight: 3.5, label: 'Motorway' },
-  motorway_link:  { color: '#b91c1c', weight: 2.5, label: 'Motorway Link' },
-  trunk:          { color: '#c2410c', weight: 3.0, label: 'Trunk Road' },
-  trunk_link:     { color: '#c2410c', weight: 2.0, label: 'Trunk Link' },
-  primary:        { color: '#0369a1', weight: 2.5, label: 'Primary Road' },
-  primary_link:   { color: '#0369a1', weight: 1.8, label: 'Primary Link' },
-  secondary:      { color: '#4338ca', weight: 2.0, label: 'Secondary Road' },
-  secondary_link: { color: '#4338ca', weight: 1.5, label: 'Secondary Link' },
-  tertiary:       { color: '#374151', weight: 1.6, label: 'Tertiary Road' },
-  tertiary_link:  { color: '#374151', weight: 1.2, label: 'Tertiary Link' },
-  residential:    { color: '#4b5563', weight: 1.2, label: 'Residential' },
-  living_street:  { color: '#6b7280', weight: 1.0, label: 'Living Street' },
-  unclassified:   { color: '#6b7280', weight: 0.9, label: 'Unclassified' },
-  service:        { color: '#9ca3af', weight: 0.8, label: 'Service Road' },
-  track:          { color: '#78350f', weight: 0.8, label: 'Track' },
-  path:           { color: '#a3a3a3', weight: 0.6, label: 'Path' },
-  footway:        { color: '#d4d4d4', weight: 0.5, label: 'Footway' },
-  cycleway:       { color: '#0e7490', weight: 0.7, label: 'Cycleway' },
+  motorway:       { color: '#b91c1c', weight: 2.0, label: 'Motorway' },
+  motorway_link:  { color: '#b91c1c', weight: 1.4, label: 'Motorway Link' },
+  trunk:          { color: '#c2410c', weight: 1.8, label: 'Trunk Road' },
+  trunk_link:     { color: '#c2410c', weight: 1.2, label: 'Trunk Link' },
+  primary:        { color: '#0369a1', weight: 1.5, label: 'Primary Road' },
+  primary_link:   { color: '#0369a1', weight: 1.0, label: 'Primary Link' },
+  secondary:      { color: '#4338ca', weight: 1.2, label: 'Secondary Road' },
+  secondary_link: { color: '#4338ca', weight: 0.8, label: 'Secondary Link' },
+  tertiary:       { color: '#374151', weight: 1.0, label: 'Tertiary Road' },
+  tertiary_link:  { color: '#374151', weight: 0.7, label: 'Tertiary Link' },
+  residential:    { color: '#6b7280', weight: 0.7, label: 'Residential' },
+  living_street:  { color: '#9ca3af', weight: 0.5, label: 'Living Street' },
+  unclassified:   { color: '#9ca3af', weight: 0.5, label: 'Unclassified' },
+  service:        { color: '#d1d5db', weight: 0.4, label: 'Service Road' },
+  track:          { color: '#78350f', weight: 0.5, label: 'Track' },
+  path:           { color: '#d4d4d4', weight: 0.3, label: 'Path' },
+  footway:        { color: '#e5e7eb', weight: 0.3, label: 'Footway' },
+  cycleway:       { color: '#0e7490', weight: 0.5, label: 'Cycleway' },
 };
 
-const DEFAULT_STYLE = { color: '#6b7280', weight: 0.8, label: 'Road' };
+const DEFAULT_STYLE = { color: '#9ca3af', weight: 0.5, label: 'Road' };
 
 function getRoadStyle(fclass: string) {
   return ROAD_STYLES[fclass] || DEFAULT_STYLE;
@@ -99,7 +99,7 @@ export function RoadOverlayLayer() {
         return {
           color: cfg.color,
           weight: cfg.weight,
-          opacity: 0.85,
+          opacity: 0.7,
           lineCap: 'round' as const,
           lineJoin: 'round' as const,
           interactive: true, // needed for Canvas click events

@@ -1,22 +1,11 @@
 import { useState } from 'react';
 import { useAppStore } from '../../store/useAppStore';
 import { 
-  CloudRain, 
-  GraduationCap, 
-  Activity, 
-  Shield, 
-  Landmark, 
   Route,
   Check,
-  Radio,
   MapIcon,
-  Navigation,
   PanelLeftClose,
   PanelLeftOpen,
-  Hexagon,
-  Radar,
-  SignalHigh,
-  Users
 } from 'lucide-react';
 
 function CheckboxItem({ 
@@ -88,20 +77,8 @@ function CheckboxItem({
 
 export function MapLegend() {
   const { 
-    showPrecipitation, setShowPrecipitation,
-    showClouds, setShowClouds,
-    showSchools, setShowSchools,
-    showHealth, setShowHealth,
-    showShelters, setShowShelters,
-    showReligiousPlaces, setShowReligiousPlaces,
     showRoads, setShowRoads,
     showAllRoads, setShowAllRoads,
-    showHoneycomb, setShowHoneycomb,
-    showControlStations, setShowControlStations,
-    showRouting, setShowRouting,
-    showCopilotForecastLayer, setShowCopilotForecastLayer,
-    showWarningGapLayer, setShowWarningGapLayer,
-    showTelemetry, setShowTelemetry
   } = useAppStore();
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -126,64 +103,10 @@ export function MapLegend() {
         {isExpanded ? <PanelLeftClose className="w-3.5 h-3.5" /> : <PanelLeftOpen className="w-[18px] h-[18px]" />}
       </button>
 
-      {isExpanded && <h3 className="text-zinc-100 font-medium text-[13px] tracking-wide mb-3 px-1.5">Map Layers</h3>}
+      {isExpanded && <h3 className="text-zinc-100 font-medium text-[13px] tracking-wide mb-3 px-1.5">Road Layers</h3>}
 
       <div className={`flex flex-col ${isExpanded ? 'space-y-0.5' : 'w-full items-center mb-0'}`}>
         
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showPrecipitation || showClouds} 
-          onChange={(v) => { setShowPrecipitation(v); setShowClouds(v); }} 
-          label="Weather" 
-          Icon={CloudRain}
-          colorClass="text-blue-400"
-        />
-
-        <div className={`h-px bg-white/5 flex-shrink-0 ${isExpanded ? 'w-full my-2' : 'w-5 mx-auto my-2'}`} />
-        
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showSchools} 
-          onChange={setShowSchools} 
-          label="Schools" 
-          Icon={GraduationCap}
-          colorClass="text-indigo-400"
-        />
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showHealth} 
-          onChange={setShowHealth} 
-          label="Health" 
-          Icon={Activity}
-          colorClass="text-rose-400"
-        />
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showShelters} 
-          onChange={setShowShelters} 
-          label="Shelters" 
-          Icon={Shield}
-          colorClass="text-emerald-400"
-        />
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showControlStations} 
-          onChange={setShowControlStations} 
-          label="Control Stations" 
-          Icon={Radio}
-          colorClass="text-purple-500"
-        />
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showReligiousPlaces} 
-          onChange={setShowReligiousPlaces} 
-          label="Religious Places" 
-          Icon={Landmark}
-          colorClass="text-amber-400"
-        />
-
-        <div className={`h-px bg-white/5 flex-shrink-0 ${isExpanded ? 'w-full my-2' : 'w-5 mx-auto my-2'}`} />
-
         <CheckboxItem 
           isExpanded={isExpanded}
           checked={showRoads} 
@@ -199,49 +122,6 @@ export function MapLegend() {
           label="All Roads" 
           Icon={MapIcon}
           colorClass="text-cyan-400"
-        />
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showRouting} 
-          onChange={setShowRouting} 
-          label="Evacuation Routes" 
-          Icon={Navigation}
-          colorClass="text-blue-500"
-        />
-
-        <div className={`h-px bg-white/5 flex-shrink-0 ${isExpanded ? 'w-full my-2' : 'w-5 mx-auto my-2'}`} />
-
-        <CheckboxItem 
-          isExpanded={isExpanded}
-          checked={showHoneycomb} 
-          onChange={setShowHoneycomb} 
-          label="Honeycomb Zones" 
-          Icon={Hexagon}
-          colorClass="text-red-500"
-        />
-        <CheckboxItem
-          isExpanded={isExpanded}
-          checked={showCopilotForecastLayer}
-          onChange={setShowCopilotForecastLayer}
-          label="Forecast Branches"
-          Icon={Radar}
-          colorClass="text-cyan-400"
-        />
-        <CheckboxItem
-          isExpanded={isExpanded}
-          checked={showWarningGapLayer}
-          onChange={setShowWarningGapLayer}
-          label="Warning Gap"
-          Icon={SignalHigh}
-          colorClass="text-orange-400"
-        />
-        <CheckboxItem
-          isExpanded={isExpanded}
-          checked={showTelemetry}
-          onChange={setShowTelemetry}
-          label="Telemetry Clients"
-          Icon={Users}
-          colorClass="text-emerald-400"
         />
       </div>
 

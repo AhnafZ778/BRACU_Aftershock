@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Dhaka Mask" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-180, -90], [180, -90], [180, 90], [-180, 90], [-180, -90]
+          ],
+          [
+            [87.0, 21.0],
+            [94.0, 21.0],
+            [94.0, 27.0],
+            [87.0, 27.0],
+            [87.0, 21.0]
+          ]
+        ]
+      }
+    }
+  ]
+}
